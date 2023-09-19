@@ -5,9 +5,10 @@
 #include "traversaldoubly.c"
 #include "insertatbeginning.c"
 #include "insertatend.c"
+#include "insertatanypos.c"
 
 void main()
 {
   doublynode *list1 = createDoubly();
-  insertAtEnd(list1);
+  insertAtAnyPosition(list1);
 }
