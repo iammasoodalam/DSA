@@ -7,7 +7,8 @@ int nodeCount(node *header)
   node *ptr = header;
   int count = 0;
   while (ptr->link != (void *)0)
-  { // (void *)0 => this is NULL equivalent, I'm just typecasting 0 to NULL
+  // (void *)0 => this is NULL equivalent, I'm just typecasting 0 to NULL
+  {
     count++;
     ptr = ptr->link;
   }
