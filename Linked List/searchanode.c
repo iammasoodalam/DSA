@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *searchANode(node *header)
+void searchANode(node *header)
 {
   int found = 0, position = 0, key;
   node *location;
@@ -29,7 +29,6 @@ node *searchANode(node *header)
   }
   else
   {
-    printf("The number %d is not available.", key);
+    printf("The number %d is not available.\n", key);
   }
-  return location;
 }
