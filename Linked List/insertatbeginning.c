@@ -4,7 +4,6 @@
 node *insertAtBeginning(node *header)
 {
   int n; // number of nodes to be inserted.
-  traversal(header);
   printf("Enter the number of nodes to be inserted: ");
   scanf("%d", &n);
   while (n != 0)
@@ -21,6 +20,5 @@ node *insertAtBeginning(node *header)
     header->link = new;
     n--;
   }
-  traversal(header);
   return header;
 }

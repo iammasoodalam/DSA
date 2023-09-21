@@ -4,8 +4,7 @@
 node *insertAtEnd(node *header)
 {
   node *ptr;
-  int n;             // number of nodes to be inserted
-  traversal(header); // logging the list before insertion
+  int n; // number of nodes to be inserted
   printf("Enter the number of nodes to be inserted: ");
   scanf("%d", &n);
 
@@ -31,6 +30,5 @@ node *insertAtEnd(node *header)
     ptr = new;
     n--;
   }
-  traversal(header);
   return header;
 }

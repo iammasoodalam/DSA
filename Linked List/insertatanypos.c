@@ -5,7 +5,6 @@ node *insertAtAnyPosition(node *header)
 {
   int n, position, size = 0; // n is number of nodes to be inserted and 'size' is size of linked list.
   node *p = header->link;
-  traversal(header);
   printf("Enter the position of the new nodes: ");
   scanf("%d", &position);
 
@@ -45,6 +44,5 @@ node *insertAtAnyPosition(node *header)
     p = new;
     n--;
   }
-  traversal(header);
   return header;
 }
