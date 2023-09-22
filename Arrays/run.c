@@ -6,6 +6,10 @@
 #include "insertatbeginning.c"
 #include "insertatend.c"
 #include "insertatanyposition.c"
+#include "deleteatend.c"
+#include "deleteatbeginning.c"
+#include "deleteatanyposition.c"
+#include "deleteanode.c"
 
 int main(){
     Array data;
@@ -13,11 +17,8 @@ int main(){
     scanf("%d", &data.size);
     data.array = createArray(data.size);
     traverse(data);
-    Array new = insertAtBeginning(data);
+    Array new = deleteANode(data);
     traverse(new);
-    new = insertAtEnd(new);
-    traverse(new);
-    new = insertAtAnyPosition(new);
-    traverse(new);
+
     return 0;
 }
