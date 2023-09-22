@@ -7,7 +7,7 @@ doublynode *createDoubly()
   int n, i = 1;
 
   header = (doublynode *)malloc(sizeof(doublynode));
-  header->data = NULL;
+  header->data = 0; // it should be (void *)0 NULL, but that will give an error for using value void * instead of int.
   header->previous = NULL;
   header->next = NULL;
   p = header;
