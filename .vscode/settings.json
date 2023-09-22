@@ -5,6 +5,7 @@
     "node.h": "c",
     "nodecount.h": "c",
     "ctype.h": "c",
-    "stddef.h": "c"
+    "stddef.h": "c",
+    "doublynode.h": "c"
   }
 }

@@ -1,6 +1,4 @@
-Doubly Linked List/a
-Doubly Linked List/a.exe
-Linked List/a
-Linked List/a.exe
+*.out
+*.exe
 test
 test.c
