@@ -8,6 +8,5 @@ doublynode *deleteAtBeginning(doublynode *header)
   header->next = pFront;
   pFront->previous = header;
   free(p);
-  doublyTraversal(header);
   return header;
 }

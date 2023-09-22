@@ -33,6 +33,5 @@ doublynode *deleteAtAnyPosition(doublynode *header)
   ptr2->next = p;
   p->previous = ptr2;
   free(ptr1);
-  doublyTraversal(header);
   return (header);
 }

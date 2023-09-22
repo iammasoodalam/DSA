@@ -59,6 +59,5 @@ doublynode *insertAtAnyPosition(doublynode *header)
     pTrail = new;
     n--;
   }
-  doublyTraversal(header);
   return header;
 }

@@ -11,6 +11,5 @@ doublynode *deleteAtEnd(doublynode *header)
   }
   pTrail->next = NULL;
   free(p);
-  doublyTraversal(header);
   return header;
 }

@@ -4,7 +4,6 @@
 doublynode *insertAtBeginning(doublynode *header)
 {
   int n; // number of nodes to be inserted
-  doublyTraversal(header);
   printf("Enter the number of nodes to be inserted: ");
   scanf("%d", &n);
   while (n != 0)
@@ -22,6 +21,5 @@ doublynode *insertAtBeginning(doublynode *header)
     header->next = new;
     n--;
   }
-  doublyTraversal(header);
   return header;
 }
