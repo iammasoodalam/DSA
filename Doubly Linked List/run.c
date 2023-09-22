@@ -27,10 +27,13 @@ int main()
   printf("8. Calculate the node count of a doubly linked list.\n");
 
   CHOOSE_OPERATION:
-  printf("Choose any operation provided above: ");
+  printf("\nChoose any operation provided above: ");
   scanf("%d", &operation);
 
   doublynode *list;
+  doublynode *list1;
+
+
   if (operation != 1)
   {
     printf("\nCreate your list before doing an operation...\n");
@@ -41,7 +44,7 @@ int main()
   switch (operation)
   {
   case 1:
-    doublynode *list1 = createDoubly();
+    list1 = createDoubly();
     doublyTraversal(list1);
     break;
   case 2:
