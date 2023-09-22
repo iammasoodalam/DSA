@@ -2,7 +2,7 @@
 In **computer science**, a **data structure** is a data organization, management, and storage format that is usually chosen for efficient access to data. More precisely, a **data structure** is a collection of data values, the relationships among them, and the **functions** or **operations** that can be applied to the data, i.e., it is an algebraic structure about data.
 
 ## Introduction
-In this repository I have written some programs to demonstrate the Algorithms to *traverse a list*, *insert data at the beginning*, *insert data at the end*, or *at any position* using concepts of **Arrays**, **Linked List**, **Doubly Linked list**etc.
+In this repository I have written some programs to demonstrate the Algorithms to *traverse a list*, *insert data at the beginning*, *insert data at the end*, or *at any position* using concepts of **Arrays**, **Linked List**, **Doubly Linked list** etc.
 
 ## Arrays
 In computer science, an array is a data structure consisting of a collection of elements (values or variables), of **same memory size**, each identified by at least one array *index* or *key*. An array is stored such that the position of each element can be computed from its index tuple by a mathematical formula. The simplest type of data structure is a **linear array**, also called **one-dimensional array**.
