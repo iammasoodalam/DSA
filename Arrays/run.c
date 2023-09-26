@@ -19,6 +19,6 @@ int main(){
     traverse(data);
     Array new = deleteANode(data);
     traverse(new);
-
+    // A simple change using spck
     return 0;
 }
