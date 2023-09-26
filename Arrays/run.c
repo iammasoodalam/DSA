@@ -12,13 +12,16 @@
 #include "deleteanode.c"
 
 int main(){
-    Array data;
-    printf("Enter the size of your array: ");
-    scanf("%d", &data.size);
-    data.array = createArray(data.size);
-    traverse(data);
-    Array new = deleteANode(data);
-    traverse(new);
-    // A simple change using spck
-    return 0;
+  int operation;
+  Array data;
+  printf("Choose any option from below to do operations on Arrays: ");
+  scanf("%d", &operation);
+  printf("Enter the size of your array: ");
+  scanf("%d", &data.size);
+  data.array = createArray(data.size);
+  traverse(data);
+  Array new = deleteANode(data);
+  traverse(new);
+  // A simple change using spck
+  return 0;
 }
