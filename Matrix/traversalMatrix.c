@@ -2,10 +2,12 @@
 #include "matstructure.h"
 
 void traversal(Matrix *mat){
+    printf("\n");
     for(int i = 0; i < mat->rows; i++){
         for (int j = 0; j < mat->columns; j++){
             printf("\t%d", mat->data[i][j]);
         }
         printf("\n");
     }
+    printf("\n");
 }
