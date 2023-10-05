@@ -1,44 +1,79 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-typedef struct node
-{
-    int data;
-    struct node *link;
-} node;
-
-node *header, *p, *new;
-
-void traversal(node *header)
-{
-    p = header->link;
-    while (p != NULL)
-    {
-        printf("%d \t", p->data);
-        p = p->link;
-    }
-    printf("\n");
-}
+#include "Arrays/run.c"
+#include "Linked List/run.c"
+#include "Matrix/run.c"
+#include "Doubly Linked List/run.c"
+#include "Circular Linked List/run.c"
+#include "Miscelleneous/addPolynomials.c"
 
 int main()
 {
-    int n; // n is number of elements.
-    header = (node *)malloc(sizeof(node));
-    header->data = NULL;
-    header->link = NULL;
-    p = header;
+    int operation;
+    char continueMain; // continue
+    
+    RESTART:
+    printf("1. Arrays\n");
+    printf("2. Matrix\n");
+    printf("3. Linked List\n");
+    printf("4. Doubly Linked List\n");
+    printf("5. Circular Linked List\n");
+    printf("6. Add two Polynomials using linked list\n");
 
-    printf("Enter the number of elements in the linked list: ");
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++)
+    CHOOSE_OPERATION:
+    printf("\nChoose an operation from above: ");
+    scanf("%d", &operation);
+
+    switch (operation)
     {
-        new = (node *)malloc(sizeof(node));
-        printf("Enter the data for node %d: ", i + 1);
-        scanf("%d", &new->data);
-        new->link = NULL;
-        p->link = new;
-        p = new;
+    case 1:
+        arrays();
+        break;
+    
+    case 2:
+        matrix();
+        break;
+
+    case 3:
+        linkedList();
+        break;
+
+    case 4:
+        doublyLinkedList();
+        break;
+
+    case 5:
+        CircularLinkedList();
+        break;
+
+    case 6:
+        addPolynomialsMain();
+        break;
+
+    default:
+        printf("Please enter a valid value..\n ");
+        goto CHOOSE_OPERATION;
+        break;
     }
-    traversal(header);
+
+    ASK_REDO:
+    printf("Do you want to continue with another Data Structure...\n");
+    printf("Enter Y for yes and N for No: ");
+    getchar();
+    scanf("%c", &continueMain);
+    continueMain = (char)toupper(continueMain);
+
+    if (continueMain == 89) // 89 is equivalent to Y
+    {
+        goto RESTART;
+    }
+    else if (continueMain == 78) // 78 is equivalent to N
+    {
+        return 0;
+    }
+    else
+    {
+        printf("Please read carefully...\n\n");
+        goto ASK_REDO;
+    }
     return 0;
 }

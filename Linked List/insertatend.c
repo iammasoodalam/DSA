@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *insertAtEnd(node *header)
+node *insertAtEndLL(node *header)
 {
   node *ptr;
   int n; // number of nodes to be inserted

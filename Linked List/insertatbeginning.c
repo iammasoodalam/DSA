@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *insertAtBeginning(node *header)
+node *insertAtBeginningLL(node *header)
 {
   int n; // number of nodes to be inserted.
   printf("Enter the number of nodes to be inserted: ");

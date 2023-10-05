@@ -11,7 +11,7 @@
 #include "deleteatend.c"
 #include "deleteatanypos.c"
 
-int main()
+int CircularLinkedList()
 {
   int operation;
   char cont; // continue
@@ -30,36 +30,36 @@ CHOOSE_OPERATION:
   scanf("%d", &operation);
   
   printf("\nPlease create a list: \n");
-  circularnode *list = createList();
-  traversal(list);
+  circularnode *list = createCLL();
+  traversalCLL(list);
 
   switch (operation)
   {
   case 1:
     break;
   case 2:
-    list = insertAtBeginning(list);
-    traversal(list);
+    list = insertAtBeginningCLL(list);
+    traversalCLL(list);
     break;
   case 3:
-    list = insertAtEnd(list);
-    traversal(list);
+    list = insertAtEndCLL(list);
+    traversalCLL(list);
     break;
   case 4:
-    list = insertAtAnyPosition(list);
-    traversal(list);
+    list = insertAtAnyPositionCLL(list);
+    traversalCLL(list);
     break;
   case 5:
-    list = deleteAtBeginning(list);
-    traversal(list);
+    list = deleteAtBeginningCLL(list);
+    traversalCLL(list);
     break;
   case 6:
-    list = deleteAtEnd(list);
-    traversal(list);
+    list = deleteAtEndCLL(list);
+    traversalCLL(list);
     break;
   case 7:
-    list = deleteAtAnyPosition(list);
-    traversal(list);
+    list = deleteAtAnyPositionCLL(list);
+    traversalCLL(list);
     break;
 
   default:

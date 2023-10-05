@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "circularnode.h"
 
-circularnode *createList()
+circularnode *createCLL()
 {
   circularnode *header, *p, *new;
   int n, i = 1;

@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct node
+typedef struct polyNode
 {
     int coefficient;
     int exponent;
-    struct node *link;
+    struct polyNode *link;
 } Node;
 
 Node *createPolynomial(){
@@ -35,7 +35,7 @@ Node *createPolynomial(){
     return header;
 }
 
-void traversal(Node *header){
+void traversalPoly(Node *header){
     Node *ptr;
     ptr = header->link;
     while (ptr != NULL){
@@ -105,11 +105,11 @@ Node *addPolynomials(Node *header1, Node *header2){
     return header3;
 }
 
-int main(){
+int addPolynomialsMain(){
     Node *header1 = createPolynomial();
-    traversal(header1);
+    traversalPoly(header1);
     Node *header2 = createPolynomial();
-    traversal(header2);
+    traversalPoly(header2);
     Node *result = addPolynomials(header1, header2);
-    traversal(result);
+    traversalPoly(result);
 }

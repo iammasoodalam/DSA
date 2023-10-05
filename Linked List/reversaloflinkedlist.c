@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *reversal(node *header)
+node *reversalLL(node *header)
 {
   node *q = header->link;
   node *r = NULL, *s = NULL;

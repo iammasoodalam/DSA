@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "doublynode.h"
 
-doublynode *deleteAtEnd(doublynode *header)
+doublynode *deleteAtEndDLL(doublynode *header)
 {
   doublynode *p = header->next, *pTrail;
   while (p->next != NULL)

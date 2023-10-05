@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "circularnode.h"
 
-circularnode *insertAtBeginning(circularnode *header)
+circularnode *insertAtBeginningCLL(circularnode *header)
 {
   int n; // number of nodes to be inserted.
   printf("Enter the number of nodes to be inserted: ");

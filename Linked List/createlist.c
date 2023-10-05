@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *createList()
+node *createListLL()
 {
   node *header, *p, *new;
   int n, i = 1;

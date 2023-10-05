@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "node.h"
 
-node *mergeAndSort(node *header1, node *header2)
+node *mergeAndSortLL(node *header1, node *header2)
 {
   node *ptr1 = header1->link, *ptr2 = header2->link;
   node *header3 = (node *)malloc(sizeof(node));

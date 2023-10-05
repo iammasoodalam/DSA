@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "circularnode.h"
 
-circularnode *insertAtAnyPosition(circularnode *header)
+circularnode *insertAtAnyPositionCLL(circularnode *header)
 {
   int n, position, count = 0; // n is number of nodes to be inserted.
   circularnode *p = header->next, *countPtr = header;

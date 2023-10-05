@@ -15,7 +15,7 @@
 #include "reversaloflinkedlist.c"
 #include "mergeandsort.c"
 
-int main()
+int linkedList()
 {
   int operation;
   char cont; // continue
@@ -40,56 +40,56 @@ CHOOSE_OPERATION:
   if (operation != 1)
   {
     printf("\nCreate your list before doing an operation...\n");
-    list = createList();
-    traversal(list);
+    list = createListLL();
+    traversalLL(list);
   }
 
   switch (operation)
   {
   case 1:
-    node *list1 = createList();
-    traversal(list1);
+    node *list1 = createListLL();
+    traversalLL(list1);
     break;
   case 2:
-    list = insertAtBeginning(list);
-    traversal(list);
+    list = insertAtBeginningLL(list);
+    traversalLL(list);
     break;
   case 3:
-    list = insertAtEnd(list);
-    traversal(list);
+    list = insertAtEndLL(list);
+    traversalLL(list);
     break;
   case 4:
-    list = insertAtAnyPosition(list);
-    traversal(list);
+    list = insertAtAnyPositionLL(list);
+    traversalLL(list);
     break;
   case 5:
-    list = deleteAtBeginning(list);
-    traversal(list);
+    list = deleteAtBeginningLL(list);
+    traversalLL(list);
     break;
   case 6:
-    list = deleteAtEnd(list);
-    traversal(list);
+    list = deleteAtEndLL(list);
+    traversalLL(list);
     break;
   case 7:
-    list = deleteAtAnyPosition(list);
-    traversal(list);
+    list = deleteAtAnyPositionLL(list);
+    traversalLL(list);
     break;
   case 8:
     int count = nodeCount(list);
     printf("There are total %d nodes.", count);
     break;
   case 9:
-    searchANode(list);
+    searchANodeLL(list);
     break;
   case 10:
-    list = reversal(list);
-    traversal(list);
+    list = reversalLL(list);
+    traversalLL(list);
     break;
   case 11:
-    node *list2 = createList();
+    node *list2 = createListLL();
     node *resultantList;
-    resultantList = mergeAndSort(list, list2);
-    traversal(resultantList);
+    resultantList = mergeAndSortLL(list, list2);
+    traversalLL(resultantList);
     break;
 
   default:
@@ -99,7 +99,7 @@ CHOOSE_OPERATION:
   }
 
 ASK_REDO:
-  printf("Do you want to continue...\n");
+  printf("Do you want to continue in linked lists...\n");
   printf("Enter Y for yes and N for No: ");
   getchar();
   scanf("%c", &cont);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *insertAtAnyPosition(node *header)
+node *insertAtAnyPositionLL(node *header)
 {
   int n, position, size = 0; // n is number of nodes to be inserted and 'size' is size of linked list.
   node *p = header->link;

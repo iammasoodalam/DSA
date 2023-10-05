@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "doublynode.h"
 
-doublynode *deleteAtAnyPosition(doublynode *header)
+doublynode *deleteAtAnyPositionDLL(doublynode *header)
 {
   int size = 0, position;
   doublynode *p = header->next, *ptr1, *ptr2;

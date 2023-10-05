@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-node *deleteAtBeginning(node *header)
+node *deleteAtBeginningLL(node *header)
 {
   node *ptr = header->link;
 

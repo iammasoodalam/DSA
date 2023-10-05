@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "circularnode.h"
 
-circularnode *deleteAtBeginning(circularnode *header)
+circularnode *deleteAtBeginningCLL(circularnode *header)
 {
   circularnode *ptr = header->next;
 

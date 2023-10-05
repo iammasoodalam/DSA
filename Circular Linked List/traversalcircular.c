@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "circularnode.h"
 
-void traversal(circularnode *header)
+void traversalCLL(circularnode *header)
 {
   circularnode *p;
   p = header->next;

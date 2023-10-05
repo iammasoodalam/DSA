@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "doublynode.h"
 
-doublynode *insertAtAnyPosition(doublynode *header)
+doublynode *insertAtAnyPositionDLL(doublynode *header)
 {
   int n, position, size = 0; // n is number of nodes to be inserted;
   doublynode *p = header->next;

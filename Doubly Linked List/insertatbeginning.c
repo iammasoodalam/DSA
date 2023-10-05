@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "doublynode.h"
 
-doublynode *insertAtBeginning(doublynode *header)
+doublynode *insertAtBeginningDLL(doublynode *header)
 {
   int n; // number of nodes to be inserted
   printf("Enter the number of nodes to be inserted: ");

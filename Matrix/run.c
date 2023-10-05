@@ -8,7 +8,7 @@
 #include "multiplymatrices.c"
 #include "transposematrix.c"
 
-int main(){
+int matrix(){
     int operation; 
     char cont; // continue
     Matrix *mat1, *mat2, *matrix;

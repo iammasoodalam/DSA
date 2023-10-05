@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-void searchANode(node *header)
+void searchANodeLL(node *header)
 {
   int found = 0, position = 0, key;
   node *location;

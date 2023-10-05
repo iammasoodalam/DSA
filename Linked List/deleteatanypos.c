@@ -2,7 +2,7 @@
 #include "node.h"
 #include "nodecount.h"
 
-node *deleteAtAnyPosition(node *header)
+node *deleteAtAnyPositionLL(node *header)
 {
   node *ptr = header->link, *ptr1;
   int position;

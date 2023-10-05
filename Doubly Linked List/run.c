@@ -11,7 +11,7 @@
 #include "deleteatbeginning.c"
 #include "deleteatanypos.c"
 
-int main()
+int doublyLinkedList()
 {
   int operation; // operation type
   char cont; // continue
@@ -48,27 +48,27 @@ int main()
     doublyTraversal(list1);
     break;
   case 2:
-    list = insertAtBeginning(list);
+    list = insertAtBeginningDLL(list);
     doublyTraversal(list);
     break;
   case 3:
-    list = insertAtEnd(list);
+    list = insertAtEndDLL(list);
     doublyTraversal(list);
     break;
   case 4:
-    list = insertAtAnyPosition(list);
+    list = insertAtAnyPositionDLL(list);
     doublyTraversal(list);
     break;
   case 5:
-    list = deleteAtBeginning(list);
+    list = deleteAtBeginningDLL(list);
     doublyTraversal(list);
     break;
   case 6:
-    list = deleteAtEnd(list);
+    list = deleteAtEndDLL(list);
     doublyTraversal(list);
     break;
   case 7:
-    list = deleteAtAnyPosition(list);
+    list = deleteAtAnyPositionDLL(list);
     doublyTraversal(list);
     break;
   default:

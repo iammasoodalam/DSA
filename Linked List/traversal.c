@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "node.h"
 
-void traversal(node *header)
+void traversalLL(node *header)
 {
   node *p;
   p = header->link;
