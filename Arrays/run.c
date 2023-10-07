@@ -29,14 +29,14 @@ RESTART:
 CHOOSE_OPERATION:
   printf("Choose any operation provided above: ");
   scanf("%d", &operation);
-  
+
   Array array;
   if (operation != 1)
   {
     printf("\nCreate your list before doing an operation...\n");
     printf("Enter the size of your array: ");
     scanf("%d", &array.size);
-    array.array = createArray(array.size);
+    array = createArray(array.size);
     traverse(array);
   }
 
@@ -46,7 +46,7 @@ CHOOSE_OPERATION:
     Array array1;
     printf("Enter the size of your array: ");
     scanf("%d", &array1.size);
-    array1.array = createArray(array1.size);
+    array1 = createArray(array1.size);
     traverse(array1);
     break;
   case 2:
@@ -77,7 +77,7 @@ CHOOSE_OPERATION:
     array = deleteANode(array);
     traverse(array);
     break;
-  
+
   default:
     printf("Please enter a valid value..\n ");
     goto CHOOSE_OPERATION;

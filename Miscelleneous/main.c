@@ -109,7 +109,7 @@ Node *addPolynomials(Node *header1, Node *header2){
     return header3;
 }
 
-int addPolynomialsMain(){
+int main(){
     Node *header1 = createPolynomial();
     traversalPoly(header1);
     Node *header2 = createPolynomial();

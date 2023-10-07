@@ -7,7 +7,8 @@ node *createListLL()
   int n, i = 1;
 
   header = (node *)malloc(sizeof(node));
-  header->data = 0; // it should be (void *)0 means NULL but that will create an error.
+  header->data = 0; /* it should be (void *)0 means NULL
+  but using NULL will create a warning for using int* in place of int.*/
   header->link = NULL;
   p = header;
 

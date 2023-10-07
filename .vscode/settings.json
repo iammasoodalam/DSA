@@ -6,6 +6,7 @@
     "nodecount.h": "c",
     "ctype.h": "c",
     "stddef.h": "c",
-    "doublynode.h": "c"
+    "doublynode.h": "c",
+    "circularnode.h": "c"
   }
 }

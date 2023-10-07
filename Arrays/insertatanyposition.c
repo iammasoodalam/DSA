@@ -9,6 +9,11 @@ Array insertAtAnyPosition(Array data){
     printf("Enter the position of new node: ");
     scanf("%d", &position);
 
+    if(position < 1 || position > data.size){
+        printf("Insertion at that position is not possible now...");
+        return data;
+    }
+
     for (int i = 0; i < sizeOfNewNodes; i++){
         if(data.size >= ARRAY_SIZE){
             printf("Insertion is not possible...\n");
@@ -19,7 +24,7 @@ Array insertAtAnyPosition(Array data){
         for(int j = data.size; j >= position; j--){
             data.array[j] = data.array[j-1];
         }
-        data.array[position] = newNumber;
+        data.array[position - 1] = newNumber;
         position++;
         data.size++;
     }
