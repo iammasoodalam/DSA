@@ -3,20 +3,16 @@
 
 typedef struct node
 {
-    int data;
-    struct node *link;
+  int data;
+  struct node *link;
 } Node;
 
 typedef struct stack
 {
-    Node *head;
-    Node *top;
+  Node *head;
+  Node *top;
 } Stack;
 
-typedef struct popreturn
-{
-    Stack newStack;
-    Node *element;
-} PopReturn;
+Stack stack; // creating a stack at global scope
 
 #endif
