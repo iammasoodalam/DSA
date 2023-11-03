@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "*.ejs": "html",
     "stdio.h": "c",
     "stdlib.h": "c",
     "node.h": "c",
@@ -7,6 +8,11 @@
     "ctype.h": "c",
     "stddef.h": "c",
     "doublynode.h": "c",
-    "circularnode.h": "c"
+    "circularnode.h": "c",
+    "stackstructurell.h": "c",
+    "math.h": "c",
+    "libc-header-start.h": "c",
+    "windows.h": "c",
+    "stackstructurearray.h": "c"
   }
 }
