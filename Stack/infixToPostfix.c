@@ -20,8 +20,8 @@ char *infixToPostfix(char *expresssion)
     {
         k++;
     }
-    expresssion[k++] = ')';
-    expresssion[k] = '\0';
+    expresssion[k] = ')';
+    expresssion[++k] = '\0';
 
     stack.top = 0;
     push('(');
@@ -39,8 +39,8 @@ char *infixToPostfix(char *expresssion)
 
         x = pop();
 
-        if ((item > 64 && item < 91) || // if item is A - Z
-            (item > 96 && item < 123))  // if item is a - z
+        if ((item >= 'A' && item <= 'Z') ||
+            (item >= 'a' && item <= 'z'))
         {
             push(x);
             output[j] = item;
