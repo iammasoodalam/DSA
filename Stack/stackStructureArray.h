@@ -5,7 +5,7 @@
 
 typedef struct stack
 {
-  int array[STACK_SIZE];
+  double array[STACK_SIZE];
   int top;
 } Stack;
 
