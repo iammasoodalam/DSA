@@ -11,7 +11,7 @@ void traverse(Stack stack)
     int i = 0;
     while (i <= stack.top)
     {
-      printf("\t%d", stack.array[i]);
+      printf("\t%f", stack.array[i]);
       i++;
     }
     printf("\n");

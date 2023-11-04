@@ -1,6 +1,6 @@
 #include "stackStructureArray.h"
 
-void push(int data)
+void push(double data)
 {
   if (stack.top == STACK_SIZE - 1)
   {

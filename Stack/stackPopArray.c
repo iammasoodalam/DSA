@@ -1,6 +1,6 @@
 #include "stackStructureArray.h"
 
-int pop()
+double pop()
 {
   if (stack.top == -1)
   {
