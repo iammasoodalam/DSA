@@ -5,7 +5,10 @@
 #include "stackPopArray.c"
 #include "instackPriority.c"
 #include "incomingPriority.c"
+
+#ifndef MAX_EXPRESSION_SIZE
 #define MAX_EXPRESSION_SIZE 50
+#endif
 
 char output[MAX_EXPRESSION_SIZE];
 
