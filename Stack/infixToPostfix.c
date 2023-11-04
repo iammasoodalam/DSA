@@ -34,7 +34,7 @@ char *infixToPostfix(char *expresssion)
         char item = expresssion[i];
 
         // This will handle spaces in the user's Arithmatic expression
-        if (item == ' ')
+        if (item == ' ' || item == '\t')
         {
             i++;
             continue;
