@@ -13,6 +13,7 @@
     "math.h": "c",
     "libc-header-start.h": "c",
     "windows.h": "c",
-    "stackstructurearray.h": "c"
+    "stackstructurearray.h": "c",
+    "structurequeueusingarray.h": "c"
   }
 }
