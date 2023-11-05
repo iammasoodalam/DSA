@@ -12,7 +12,7 @@ int main()
   scanf("%[^\n]%*c", expression);
 
   postfix = infixToPostfix(expression);
-  printf("%s\n", postfix);
+  printf("Postfix: %s\n", postfix);
 
   answer = evaluatePostfix(postfix);
   printf("Answer = %lf\n", answer);
