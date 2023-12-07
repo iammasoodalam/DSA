@@ -4,7 +4,7 @@
 
 node *deleteAtAnyPositionLL(node *header)
 {
-  node *ptr = header->link, *ptr1;
+  node *ptr = header->link, *ptr1 = header;
   int position;
   int tolalNodes = nodeCount(header);
 
